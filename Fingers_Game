@@ -1,0 +1,14 @@
+computer_fingers = rand(6)
+puts "How many fingers am I holding up?"
+guess = gets.chomp.to_i
+puts "I had #{computer_fingers} held out!"
+puts "You guessed right!" if computer_fingers == guess
+puts "Enter in a choice of 1 or 2"
+prompt = gets.chomp
+result = case prompt
+  when "1" then "mulitply"
+  when "2" then "divide"
+  else "Don't know what you're talking about"
+end
+puts result
+  
